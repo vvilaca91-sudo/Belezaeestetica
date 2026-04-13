@@ -107,7 +107,7 @@ body {
 .hero {
   position: relative;
   height: 600px;
-  background-image: url("../imagens/hero.jpg");
+  background-image: url("../Imagens/hero.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
