@@ -1,0 +1,183 @@
+/* ===================== */
+/* HERO ESTÉTICA */
+/* ===================== */
+
+.hero-estetica {
+  background-image: url("../Imagens/estetica-hero.jpg"); /* ajusta ao teu ficheiro */
+}
+
+/* overlay mais suave roxo */
+.hero-estetica::before {
+  background: rgba(120, 60, 160, 0.45);
+}
+
+
+/* ===================== */
+/* SERVIÇOS ESTÉTICA */
+/* ===================== */
+
+.servicos-estetica {
+  padding: 100px 20px;
+  background: transparent;
+}
+
+.servicos-estetica-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.servico-estetica-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.servico-estetica-card:hover {
+  transform: translateY(-5px);
+}
+
+/* topo com icone + titulo */
+.servico-estetica-topo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+/* icone roxo */
+.servico-estetica-icone {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(180, 120, 255, 0.18);
+  color: #8a2be2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servico-estetica-icone svg {
+  width: 22px;
+  height: 22px;
+  stroke-width: 2.2;
+}
+
+.servico-estetica-card h3 {
+  font-size: 1.3rem;
+  color: #1c2740;
+  margin: 0;
+}
+
+/* descrição */
+.servico-estetica-card p {
+  color: #5f6b7a;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+
+/* lista */
+.servico-estetica-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.servico-estetica-card li {
+  margin-bottom: 10px;
+  color: #5f6b7a;
+  position: relative;
+  padding-left: 18px;
+}
+
+.servico-estetica-card li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #8a2be2;
+}
+
+.servico-estetica-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.preco {
+font-weight: 700;
+color: #8a2be2;
+}
+
+
+/* ===================== */
+/* CTA ESTÉTICA */
+/* ===================== */
+
+.cta-estetica {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(90deg, #f4e9ff 0%, #ede3fb 100%);
+}
+
+.cta-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-content h2 {
+  font-size: 2.3rem;
+  color: #1c2740;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.cta-content p {
+  font-size: 1.1rem;
+  color: #5f6b7a;
+  margin-bottom: 26px;
+}
+
+
+/* ===================== */
+/* BOTÕES (ajuste leve roxo) */
+/* ===================== */
+
+.btn-primary {
+  background: linear-gradient(90deg, #c46cff 0%, #9f6cff 100%);
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+
+/* ===================== */
+/* RESPONSIVO */
+/* ===================== */
+
+@media (max-width: 1024px) {
+  .servicos-estetica-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .servicos-estetica {
+    padding: 70px 16px;
+  }
+
+  .cta-estetica {
+    padding: 70px 16px;
+  }
+
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+
+  .cta-content p {
+    font-size: 1rem;
+  }
+}

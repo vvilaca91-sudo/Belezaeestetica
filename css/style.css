@@ -1021,7 +1021,7 @@ body {
   .footer-bottom p {
     font-size: 0.98rem;
   }
-  
+
   @media (max-width: 900px) {
   .footer-grid {
     grid-template-columns: 1fr;
