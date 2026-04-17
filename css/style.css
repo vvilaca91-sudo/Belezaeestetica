@@ -54,6 +54,8 @@ body {
   color: #b12f5a;
   cursor: pointer;
   margin-left: 0px;
+  text-decoration: none;
+
 }
 
 .logo-icon {
