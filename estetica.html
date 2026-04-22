@@ -63,7 +63,10 @@
         <h3>Manicure & Pedicure</h3>
       </div>
       <p>Cuidados completos para mãos e pés com acabamento elegante e duradouro.</p>
+      <div class="servico-fotter">
       <span class="preco">Desde 10€</span>
+      <button class="btn-servicos" data-modal="manicure">Ver Serviços</button>
+      </div>
     </article>
 
     <article class="servico-estetica-card">
@@ -74,7 +77,10 @@
         <h3>Massagens & Drenagem</h3>
       </div>
       <p>Momentos de relaxamento e tratamentos corporais pensados para o seu bem-estar.</p>
+      <div class="servico-fotter">
       <span class="preco">Desde 25€</span>
+      <button class="btn-servicos" data-modal="massagem">Ver Serviços</button>
+      </div>
     </article>
 
     <article class="servico-estetica-card">
@@ -85,7 +91,10 @@
         <h3>Limpeza & Tratamentos de Pele</h3>
       </div>
       <p>Tratamentos faciais para hidratar, revitalizar e melhorar a saúde da pele.</p>
+      <div class="servico-fotter">
       <span class="preco">Desde 20€</span>
+      <button class="btn-servicos" data-modal="pele">Ver Serviços</button>
+      </div>
     </article>
 
     <article class="servico-estetica-card">
@@ -96,7 +105,10 @@
         <h3>Sobrancelhas & Pestanas</h3>
       </div>
       <p>Detalhes que valorizam o olhar e realçam a expressão natural do rosto.</p>
+      <div class="servico-fotter">
       <span class="preco">Desde 15€</span>
+      <button class="btn-servicos" data-modal="sobrancelhas">Ver Serviços</button>
+      </div>
     </article>
 
     <article class="servico-estetica-card">
@@ -107,7 +119,10 @@
         <h3>Depilação</h3>
       </div>
       <p>Soluções práticas e confortáveis para um cuidado corporal completo.</p>
+      <div class="servico-fotter">
       <span class="preco">Desde 12€</span>
+      <button class="btn-servicos" data-modal="depilacao">Ver Serviços</button>
+      </div>
     </article>
 
     <article class="servico-estetica-card">
@@ -118,7 +133,10 @@
         <h3>Bem-Estar & Relaxamento</h3>
       </div>
       <p>Experiências de cuidado pensadas para renovar corpo, pele e autoestima.</p>
+      <div class="servico-fotter">
       <span class="preco">Desde 30€</span>
+      <button class="btn-servicos" data-modal="bem-estar">Ver Serviços</button>
+      </div>
     </article>
 
   </div>
@@ -284,9 +302,147 @@
     </div>
   </footer>
 
+   <!-- Modal-Serviços -->
+  <div class="modal" id="modal-manicure">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Manicure</h2>
+      <table>
+        <tr>
+          <td>Manicure Simples</td>
+          <td>15€</td>
+        </tr>
+        <tr>
+          <td>Manicure + Pedicure</td>
+          <td>25€</td>
+        </tr>
+        <tr>
+          <td>Manicure + Esmalte</td>
+          <td>30€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-massagem">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Massagens</h2>
+      <table>
+        <tr>
+          <td>Massagem Relaxante</td>
+          <td>30€</td>
+        </tr>
+        <tr>
+          <td>Drenagem Linfática</td>
+          <td>35€</td>
+        </tr>
+        <tr>
+          <td>Massagem Modeladora</td>
+          <td>40€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-pele">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Tratamentos de Pele</h2>
+      <table>
+        <tr>
+          <td>Limpeza de Pele</td>
+          <td>20€</td>
+        </tr>
+        <tr>
+          <td>Hidratação Facial</td>
+          <td>25€</td>
+        </tr>
+        <tr>
+          <td>Peeling Facial</td>
+          <td>30€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-sobrancelhas">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Sobrancelhas & Pestanas</h2>
+      <table>
+        <tr>
+          <td>Design de Sobrancelhas</td>
+          <td>15€</td>
+        </tr>
+        <tr>
+          <td>Extensão de Pestanas</td>
+          <td>30€</td>
+        </tr>
+        <tr>
+          <td>Lifting de Pestanas</td>
+          <td>25€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-depilacao">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Depilação</h2>
+      <table>
+        <tr>
+          <td>Depilação Facial</td>
+          <td>12€</td>
+        </tr>
+        <tr>
+          <td>Depilação Corporal</td>
+          <td>20€</td>
+        </tr>
+        <tr>
+          <td>Depilação Completa</td>
+          <td>30€</td>
+        </tr>
+      </table>
+    </div> 
+  </div>
+
+  <div class="modal" id="modal-bem-estar">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Bem-Estar & Relaxamento</h2>
+      <table>
+        <tr>
+          <td>Banho de Ofurô</td>
+          <td>30€</td>
+        </tr>
+        <tr>
+          <td>Ritual de Spa</td>
+          <td>50€</td>
+        </tr>
+        <tr>
+          <td>Experiência Sensorial</td>
+          <td>40€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <span class="lightbox-prev" id="lightbox-prev">&#10094;</span>
+    <img src="" alt="Imagem Ampliada" class="lightbox-img" id="lightbox-img">
+    <span class="lightbox-next" id="lightbox-next">&#10095;</span> 
+  </div>
+
+
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
   </script>
+
+  <script src="js/modal.js"></script>
+
 </body>
 </html>

@@ -62,7 +62,10 @@
           <h3>Corte Feminino</h3>
         </div>
         <p>Cortes modernos adaptados ao seu estilo, formato de rosto e preferências pessoais.</p>
+        <div class="servico-fotter">
         <span class="preco">Desde 15€</span>
+        <button class="btn-servicos" data-modal="corte">Ver Serviços</button>
+        </div>
       </article>
 
       <article class="servico-cabelo-card">
@@ -73,7 +76,10 @@
           <h3>Coloração</h3>
         </div>
         <p>Técnicas de coloração, madeixas e tonalização para um resultado elegante e duradouro.</p>
+        <div class="servico-fotter">
         <span class="preco">Desde 30€</span>
+        <button class="btn-servicos" data-modal="coloracao">Ver Serviços</button>
+        </div>
       </article>
 
       <article class="servico-cabelo-card">
@@ -84,7 +90,10 @@
           <h3>Tratamentos Capilares</h3>
         </div>
         <p>Hidratação, nutrição e reconstrução para recuperar brilho, força e suavidade.</p>
+        <div class="servico-fotter">
         <span class="preco">Desde 20€</span>
+        <button class="btn-servicos" data-modal="tratamento">Ver Serviços</button>
+        </div>
       </article>
 
       <article class="servico-cabelo-card">
@@ -95,7 +104,10 @@
           <h3>Penteados</h3>
         </div>
         <p>Penteados elegantes para casamentos, eventos especiais ou ocasiões importantes.</p>
+        <div class="servico-fotter">
         <span class="preco">Desde 25€</span>
+        <button class="btn-servicos" data-modal="penteados">Ver Serviços</button>
+        </div>
       </article>
     </div>
   </section>
@@ -260,9 +272,104 @@
     </div>
   </footer>
 
+  
+  <!-- Modal-Serviços -->
+  <div class="modal" id="modal-corte">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Corte Feminino</h2>
+      <table>
+        <tr>
+          <td>Corte Simples</td>
+          <td>15€</td>
+        </tr>
+        <tr>
+          <td>Corte + Lavagem</td>
+          <td>20€</td>
+        </tr>
+        <tr>
+          <td>Corte + Brushing</td>
+          <td>30€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-coloracao">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Coloração</h2>
+      <table>
+        <tr>
+          <td>Coloração Simples</td>
+          <td>30€</td>
+        </tr>
+        <tr>
+          <td>Madeixas</td>
+          <td>50€</td>
+        </tr>
+        <tr>
+          <td>Tonalização</td>
+          <td>25€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-tratamento">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Tratamentos Capilares</h2>
+      <table>
+        <tr>
+          <td>Hidratação</td>
+          <td>20€</td>
+        </tr>
+        <tr>
+          <td>Nutrição</td>
+          <td>25€</td>
+        </tr>
+        <tr>
+          <td>Reconstrução</td>
+          <td>30€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-penteados">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Penteados</h2>
+      <table>
+        <tr>
+          <td>Penteado Simples</td>
+          <td>25€</td>
+        </tr>
+        <tr>
+          <td>Penteado para Evento</td>
+          <td>40€</td>
+        </tr>
+        <tr>
+          <td>Penteado + Maquilhagem</td>
+          <td>60€</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+  <span class="lightbox-close" id="lightbox-close">&times;</span>
+  <span class="lightbox-prev" id="lightbox-prev">&#10094;</span>
+  <img src="" alt="Imagem Ampliada" class="lightbox-img" id="lightbox-img">
+  <span class="lightbox-next" id="lightbox-next">&#10095;</span> 
+  </div>
+
   <script src="https://unpkg.com/lucide@latest"></script>
   <script>
     lucide.createIcons();
   </script>
+
+  <script src="js/modal.js"></script>
 </body>
 </html>

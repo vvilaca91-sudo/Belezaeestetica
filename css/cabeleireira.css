@@ -2,6 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 /* ===================== */
 /* HERO CABELEIREIRA */
 /* ===================== */
@@ -81,6 +82,23 @@ font-weight: 700;
 color: #b12f5a;
 }
 
+.btn-servicos {
+background: transparent;
+border: none;
+color: #b12f5a;
+font-weight: 600;
+cursor: pointer;
+}
+
+.btn-servicos:hover {
+text-decoration: underline;
+}
+.servico-fotter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
 
 /* ===================== */
 /* CTA CABELEIREIRA */
@@ -108,6 +126,182 @@ font-weight: 700;
 font-size: 1.1rem;
 color: #5f6b7a;
 margin-bottom: 26px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  cursor: pointer;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease;
+  cursor: default;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translatey(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #999;
+  transition: 0.2s;
+}
+.close:hover {
+  color: #000;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+  color: #1c2740;
+}
+
+.modal-content table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.modal-content td { 
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.modal-content td:first-child {
+  font-weight: 600;
+  color: #b12f5a
+}
+
+/* ========================= */
+/* LIGHTBOX GALERIA */
+/* ========================= */
+
+body.modal-open {
+overflow: hidden;
+}
+
+.galeria-item img {
+cursor: pointer;
+}
+
+.lightbox {
+display: none;
+position: fixed;
+inset: 0;
+background: rgba(0, 0, 0, 0.85);
+backdrop-filter: blur(4px);
+z-index: 2000;
+
+justify-content: center;
+align-items: center;
+padding: 10px;
+}
+
+.lightbox.active {
+display: flex;
+}
+
+.lightbox-img {
+max-width: 95%;
+max-height: 90vh;
+border-radius: 16px;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+animation: zoomIn 0.25s ease;
+}
+
+.lightbox-close {
+position: absolute;
+top: 20px;
+right: 28px;
+font-size: 2rem;
+color: #ffffff;
+cursor: pointer;
+line-height: 1;
+z-index: 2002;
+}
+
+.lightbox-prev,
+.lightbox-next {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+font-size: 2.5rem;
+color: #ffffff;
+cursor: pointer;
+user-select: none;
+padding: 10px;
+z-index: 2002;
+line-height: 1;
+}
+
+.lightbox-prev {
+left: 20px;
+}
+
+.lightbox-next {
+right: 20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover {
+opacity: 0.7;
+}
+
+@keyframes zoomIn {
+from {
+opacity: 0;
+transform: scale(0.96);
+}
+to {
+opacity: 1;
+transform: scale(1);
+}
+}
+
+@media (max-width: 768px) {
+.lightbox-img {
+max-width: 92%;
+max-height: 75vh;
+}
+
+.lightbox-prev,
+.lightbox-next {
+font-size: 2rem;
+}
+
+.lightbox-close {
+font-size: 1.8rem;
+top: 16px;
+right: 20px;
+}
 }
 
 
@@ -138,3 +332,4 @@ font-size: 2rem;
 font-size: 1rem;
 }
 }
+
